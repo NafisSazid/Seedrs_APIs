@@ -7,102 +7,102 @@
 #   Character.create(name: "Luke", movie: movies.first)
 require 'faker'
 
-Campaign.create(name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
+Campaign.create(id: SecureRandom.uuid, name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
                 target_amount: Faker::Number.between(from: 10000, to: 1000000), sector: "HealthCare", country: "England",
                 investment_multiple: Faker::Number.between(from: 100, to: 10000));
 
-Campaign.create(name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
+Campaign.create(id: SecureRandom.uuid, name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
                 target_amount: Faker::Number.between(from: 10000, to: 1000000), sector: "Finance", country: "England",
                 investment_multiple: Faker::Number.between(from: 100, to: 10000));
 
-Campaign.create(name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
+Campaign.create(id: SecureRandom.uuid, name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
                 target_amount: Faker::Number.between(from: 10000, to: 1000000), sector: "Energy", country: "England",
                 investment_multiple: Faker::Number.between(from: 100, to: 10000));
 
-Campaign.create(name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
+Campaign.create(id: SecureRandom.uuid, name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
                 target_amount: Faker::Number.between(from: 10000, to: 1000000), sector: "Information Technology", country: "England",
                 investment_multiple: Faker::Number.between(from: 100, to: 10000));
 
-Campaign.create(name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
+Campaign.create(id: SecureRandom.uuid, name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
                 target_amount: Faker::Number.between(from: 10000, to: 1000000), sector: "Industrials", country: "England",
                 investment_multiple: Faker::Number.between(from: 100, to: 10000));
 
-Campaign.create(name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
+Campaign.create(id: SecureRandom.uuid, name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
                 target_amount: Faker::Number.between(from: 10000, to: 1000000), sector: "HealthCare", country: "England",
                 investment_multiple: Faker::Number.between(from: 100, to: 10000));
 
-Campaign.create(name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
+Campaign.create(id: SecureRandom.uuid, name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
                 target_amount: Faker::Number.between(from: 10000, to: 1000000), sector: "Finance", country: "England",
                 investment_multiple: Faker::Number.between(from: 100, to: 10000));
 
-Campaign.create(name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
+Campaign.create(id: SecureRandom.uuid, name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
                 target_amount: Faker::Number.between(from: 10000, to: 1000000), sector: "Energy", country: "England",
                 investment_multiple: Faker::Number.between(from: 100, to: 10000));
 
-Campaign.create(name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
+Campaign.create(id: SecureRandom.uuid, name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
                 target_amount: Faker::Number.between(from: 10000, to: 1000000), sector: "Information Technology", country: "England",
                 investment_multiple: Faker::Number.between(from: 100, to: 10000));
 
-Campaign.create(name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
+Campaign.create(id: SecureRandom.uuid, name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
                 target_amount: Faker::Number.between(from: 10000, to: 1000000), sector: "Industrials", country: "England",
                 investment_multiple: Faker::Number.between(from: 100, to: 10000));
 
-Campaign.create(name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
+Campaign.create(id: SecureRandom.uuid, name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
                 target_amount: Faker::Number.between(from: 10000, to: 1000000), sector: "HealthCare", country: "England",
                 investment_multiple: Faker::Number.between(from: 100, to: 10000));
 
-Campaign.create(name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
+Campaign.create(id: SecureRandom.uuid, name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
                 target_amount: Faker::Number.between(from: 10000, to: 1000000), sector: "Finance", country: "England",
                 investment_multiple: Faker::Number.between(from: 100, to: 10000));
 
-Campaign.create(name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
+Campaign.create(id: SecureRandom.uuid, name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
                 target_amount: Faker::Number.between(from: 10000, to: 1000000), sector: "Energy", country: "England",
                 investment_multiple: Faker::Number.between(from: 100, to: 10000));
 
-Campaign.create(name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
+Campaign.create(id: SecureRandom.uuid, name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
                 target_amount: Faker::Number.between(from: 10000, to: 1000000), sector: "Information Technology", country: "England",
                 investment_multiple: Faker::Number.between(from: 100, to: 10000));
 
-Campaign.create(name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
+Campaign.create(id: SecureRandom.uuid, name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
                 target_amount: Faker::Number.between(from: 10000, to: 1000000), sector: "Industrials", country: "England",
                 investment_multiple: Faker::Number.between(from: 100, to: 10000));
 
-Campaign.create(name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
+Campaign.create(id: SecureRandom.uuid, name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
                 target_amount: Faker::Number.between(from: 10000, to: 1000000), sector: "HealthCare", country: "England",
                 investment_multiple: Faker::Number.between(from: 100, to: 10000));
 
-Campaign.create(name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
+Campaign.create(id: SecureRandom.uuid, name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
                 target_amount: Faker::Number.between(from: 10000, to: 1000000), sector: "Finance", country: "England",
                 investment_multiple: Faker::Number.between(from: 100, to: 10000));
 
-Campaign.create(name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
+Campaign.create(id: SecureRandom.uuid, name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
                 target_amount: Faker::Number.between(from: 10000, to: 1000000), sector: "Energy", country: "England",
                 investment_multiple: Faker::Number.between(from: 100, to: 10000));
 
-Campaign.create(name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
+Campaign.create(id: SecureRandom.uuid, name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
                 target_amount: Faker::Number.between(from: 10000, to: 1000000), sector: "Information Technology", country: "England",
                 investment_multiple: Faker::Number.between(from: 100, to: 10000));
 
-Campaign.create(name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
+Campaign.create(id: SecureRandom.uuid, name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
                 target_amount: Faker::Number.between(from: 10000, to: 1000000), sector: "Industrials", country: "England",
                 investment_multiple: Faker::Number.between(from: 100, to: 10000));
 
-Campaign.create(name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
+Campaign.create(id: SecureRandom.uuid, name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
                 target_amount: Faker::Number.between(from: 10000, to: 1000000), sector: "HealthCare", country: "England",
                 investment_multiple: Faker::Number.between(from: 100, to: 10000));
 
-Campaign.create(name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
+Campaign.create(id: SecureRandom.uuid, name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
                 target_amount: Faker::Number.between(from: 10000, to: 1000000), sector: "Finance", country: "England",
                 investment_multiple: Faker::Number.between(from: 100, to: 10000));
 
-Campaign.create(name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
+Campaign.create(id: SecureRandom.uuid, name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
                 target_amount: Faker::Number.between(from: 10000, to: 1000000), sector: "Energy", country: "England",
                 investment_multiple: Faker::Number.between(from: 100, to: 10000));
 
-Campaign.create(name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
+Campaign.create(id: SecureRandom.uuid, name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
                 target_amount: Faker::Number.between(from: 10000, to: 1000000), sector: "Information Technology", country: "England",
                 investment_multiple: Faker::Number.between(from: 100, to: 10000));
 
-Campaign.create(name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
+Campaign.create(id: SecureRandom.uuid, name: Faker::Company.name, image: Faker::Internet.url , percentage_raised: Faker::Number.between(from: 1, to: 100),
                 target_amount: Faker::Number.between(from: 10000, to: 1000000), sector: "Industrials", country: "England",
                 investment_multiple: Faker::Number.between(from: 100, to: 10000));

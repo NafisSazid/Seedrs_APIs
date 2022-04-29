@@ -11,7 +11,7 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema[7.0].define(version: 2022_04_29_173633) do
-  create_table "campaigns", force: :cascade do |t|
+  create_table "campaigns", id: :uuid, force: :cascade do |t|
     t.string "name"
     t.string "image"
     t.integer "percentage_raised"
