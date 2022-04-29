@@ -10,8 +10,8 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_04_29_173633) do
-  create_table "campaigns", id: :uuid, force: :cascade do |t|
+ActiveRecord::Schema[7.0].define(version: 2022_04_29_200601) do
+  create_table "campaigns", force: :cascade do |t|
     t.string "name"
     t.string "image"
     t.integer "percentage_raised"
@@ -21,6 +21,14 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_29_173633) do
     t.float "investment_multiple"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "investments", force: :cascade do |t|
+    t.float "amount"
+    t.integer "campaign_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["campaign_id"], name: "index_investments_on_campaign_id"
   end
 
 end

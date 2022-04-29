@@ -12,7 +12,7 @@ gem "sqlite3", "~> 1.4"
 gem "rspec"
 gem 'jbuilder', '~> 2.7'
 gem "faker"
-gem "byebug"
+gem 'pry', '~> 0.13.1'
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
