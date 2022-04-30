@@ -6,4 +6,16 @@ class CampaignsController < ApplicationController
 
     render json: {status: :successful, payload: @campaigns}, except: [:total_amount_raised]
   end
+
+  def filter_campaigns_by_sector
+    @campaigns = Campaign.where(sector: params[:sector_name])
+
+    render json: {status: :successful, payload: @campaigns}, except: [:total_amount_raised]
+  end
+
+  private
+
+  def filter_by_sector_params
+    params.permit(:sector_name)
+  end
 end

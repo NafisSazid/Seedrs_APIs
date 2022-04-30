@@ -23,5 +23,24 @@ RSpec.describe CampaignsController, type: :controller do
       expect(campaign['currency']).to eq('GBP')
     end
   end
+
+  describe "Retrieve Campaigns by Sector" do
+    let(:params) { { sector_name: "HealthCare" } }
+    it "returns http success and all campaigns of corresponsing sector" do
+      get :filter_campaigns_by_sector, params: params
+      response_hash = JSON.parse(response.body)
+      campaign = response_hash['payload'].first
+      expect(response).to have_http_status(:success)
+      expect(response_hash['status']).to eq('successful')
+      expect(campaign['name']).to eq('Carter-Glover')
+      expect(campaign['image']).to eq('http://osinski.org/zina.satterfield')
+      expect(campaign['target_amount']).to eq(978952.0)
+      expect(campaign['percentage_raised']).to eq(7)
+      expect(campaign['sector']).to eq('HealthCare')
+      expect(campaign['country']).to eq('England')
+      expect(campaign['investment_multiple']).to eq(3610.00)
+      expect(campaign['currency']).to eq('GBP')
+    end
+  end
 end
 
