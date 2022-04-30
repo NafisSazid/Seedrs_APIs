@@ -4,6 +4,6 @@ class CampaignsController < ApplicationController
   def index
     @campaigns = Campaign.all
 
-    render json: @campaigns
+    render json: {status: :successful, payload: @campaigns}, except: [:total_amount_raised]
   end
 end

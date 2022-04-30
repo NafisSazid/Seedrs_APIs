@@ -5,10 +5,10 @@ class InvestmentsController < ApplicationController
     @investment = InvestmentService.create(investment_params)
 
     if @investment.save
-      render json: @investment, status: :created
-    else
-      render json: @investment.errors, status: :unprocessable_entity
+      render json: {status: :successful, payload: @investment}, status: :created
     end
+  rescue => errors
+    render json: {status: :successful, payload: errors}, status: :unprocessable_entity
   end
 
   private
