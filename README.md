@@ -1,24 +1,22 @@
-# README
+# Instructions
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1. Ruby Version - `3.1.1` and Rails Version - `7.0.2.4`
 
-Things you may want to cover:
+2. Clone the repository, open this directory, and run `bundle install`
 
-* Ruby version
+3. Run `bundle exec rake db:migrate` to migrate the database
 
-* System dependencies
+4. Run `bundle exec rake db:seed` to seed the database
 
-* Configuration
+5. Now run the application with `rails s` 
 
-* Database creation
+6. Retrieve Campaigns API - `GET http://localhost:3000/api/campaigns`
 
-* Database initialization
+7. Filter Campaigns by Sector API - `GET http://localhost:3000/api/campaigns/sector/:sector_name`. Sector name E.G - HealthCare, Energy.
 
-* How to run the test suite
+8. Make Investment in a Campaign API - `POST http://localhost:3000/api/campaign/:campaign_id/investment`
+ 
+   `Request Body - `
+   `{ amount: 3610.00 }`
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+9. Run test suites with `bundle exec rspec`
