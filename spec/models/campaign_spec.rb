@@ -8,11 +8,9 @@ RSpec.describe Campaign, type: :model do
   let(:investment) do
     Investment.new(amount: 36100, campaign: subject)
   end
-  context "match attribute names" do
+  describe "match attribute names" do
     it "matches with the attribute names" do
-      expect(subject.attribute_names).to eq ["id", "name", "image", "percentage_raised",
-                                             "target_amount", "sector", "country", "investment_multiple",
-                                             "total_amount_raised", "currency", "created_at", "updated_at"]
+      expect(subject.attribute_names).to eq %w[id name image percentage_raised target_amount sector country investment_multiple total_amount_raised currency created_at updated_at]
     end
   end
 

@@ -10,7 +10,6 @@ gem "rails", "~> 7.0.2", ">= 7.0.2.3"
 gem "sqlite3", "~> 1.4"
 
 gem "rspec-rails"
-gem 'jbuilder', '~> 2.7'
 gem "faker"
 gem 'pry', '~> 0.13.1'
 

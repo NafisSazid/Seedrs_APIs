@@ -8,9 +8,9 @@ RSpec.describe Investment, type: :model do
   let(:investment) do
     described_class.new(amount: 36100, campaign: campaign)
   end
-  context "match attribute names" do
+  describe "match attribute names" do
     it "matches with the attribute names" do
-      expect(investment.attribute_names).to eq ["id", "amount", "campaign_id", "created_at", "updated_at"]
+      expect(investment.attribute_names).to eq %w[id amount campaign_id created_at updated_at]
     end
   end
   it { is_expected.to belong_to(:campaign) }
