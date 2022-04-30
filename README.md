@@ -1,6 +1,6 @@
 # Instructions
 
-1. Ruby Version - `3.1.1` and Rails Version - `7.0.2.4`
+1. Ruby Version - `3.1.1` and Rails Version - `7.0.2.4` is used
 
 2. Clone the repository, open this directory, and run `bundle install`
 
