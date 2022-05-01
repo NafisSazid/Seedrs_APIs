@@ -14,9 +14,11 @@
 
 7. Filter Campaigns by Sector API - `GET http://localhost:3000/api/campaigns/sector/:sector_name`. Sector name E.G - HealthCare, Energy.
 
-8. Make Investment in a Campaign API - `POST http://localhost:3000/api/campaign/:campaign_id/investment`
+8. Filter Campaigns by Number of Investors - `GET http://localhost:3000/api/campaigns/investment_count/:investment_count`
+
+9. Make Investment in a Campaign API - `POST http://localhost:3000/api/campaign/:campaign_id/investment`
  
    `Request Body - `
    `{ amount: 3610.00 }`
 
-9. Run test suites with `bundle exec rspec`
+10. Run test suites with `bundle exec rspec`
